@@ -1,0 +1,25 @@
+name: Copy PaperMuse runtime
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  copy-runtime:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download, verify, and upload runtime
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          gh release download runtime-main-python-3.12-v1 \
+            --repo semantic-craft/paper-muse \
+            --pattern papermuse-main-runtime-macos-arm64.tar.gz
+          echo "1c9afd28b26a1b523c47ad88724e482e4332c881910f5acf791fa4cc80a43e79  papermuse-main-runtime-macos-arm64.tar.gz" | sha256sum --check --strict
+          gh release upload runtime-main-python-3.12-v1 \
+            papermuse-main-runtime-macos-arm64.tar.gz \
+            --repo semantic-craft/paper-muse-releases \
+            --clobber
