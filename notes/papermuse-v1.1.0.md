@@ -18,3 +18,11 @@ PaperMuse 1.1.0 expands the macOS research workbench while preserving the releas
 - Provider keys remain user-supplied in `~/Library/Application Support/PaperMuse/config/secrets.toml`.
 
 Optional CNKI, zsearch, PaperQA, and gpt-researcher integrations remain explicitly degradable. Paid/API smoke is not run automatically.
+
+## Verification
+
+- Source tag: [`papermuse-v1.1.0`](https://github.com/semantic-craft/paper-muse/tree/papermuse-v1.1.0), commit `7357227f550120b034ae16a92fc9bfc675bbfbd0`.
+- Main runtime SHA-256: `1c9afd28b26a1b523c47ad88724e482e4332c881910f5acf791fa4cc80a43e79`.
+- `PaperMuse-macos-arm64.zip` SHA-256: `daf89c0af2ef0870655c2d361cb07d116eb8a403cce956b7864d30fd5b6b60bb`.
+- Apple notarization submission `7fa36132-aae0-4829-9feb-1b51fb0a1954` was accepted.
+- The zipped app passed strict code-signature verification, staple validation, and Gatekeeper assessment as a notarized Developer ID application.
