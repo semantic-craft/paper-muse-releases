@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "product": "PaperMuse",
+  "version": "1.2.0",
+  "build": "3",
+  "platform": "macOS 14+",
+  "architecture": "arm64",
+  "source": {
+    "repository": "https://github.com/semantic-craft/paper-muse",
+    "tag": "papermuse-v1.2.0",
+    "commit": "187417464f95bcd76159a2d150d35ae4b6715ec5"
+  },
+  "runtime": {
+    "tag": "runtime-main-python-3.12-v1",
+    "name": "papermuse-main-runtime-macos-arm64.tar.gz",
+    "bytes": 300461023,
+    "sha256": "1c9afd28b26a1b523c47ad88724e482e4332c881910f5acf791fa4cc80a43e79",
+    "url": "https://github.com/semantic-craft/paper-muse-releases/releases/download/runtime-main-python-3.12-v1/papermuse-main-runtime-macos-arm64.tar.gz"
+  },
+  "artifact": {
+    "releaseTag": "papermuse-v1.2.0",
+    "name": "PaperMuse-macos-arm64.zip",
+    "bytes": 301523261,
+    "sha256": "68c9f83e24f76ba435c4e6f48946a27a60bacd5b74b3046c3d750299422c1596"
+  },
+  "notarization": {
+    "submissionId": "900c1aaa-9160-45d9-8f36-d8484e6d20d9",
+    "status": "Accepted"
+  }
+}
